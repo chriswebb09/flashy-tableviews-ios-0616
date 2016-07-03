@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1FA4D81E4F1DCF07DE63FD98 /* libPods-Flashy-TableViews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B512BFDFEBE69A26B17EEC71 /* libPods-Flashy-TableViews.a */; };
+		AF23C9511D28879000BCE45B /* MyCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF23C9501D28879000BCE45B /* MyCustomTableViewCell.m */; };
 		AFBDCE521D25E39800CB5CBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE511D25E39800CB5CBC /* main.m */; };
 		AFBDCE551D25E39800CB5CBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE541D25E39800CB5CBC /* AppDelegate.m */; };
 		AFBDCE581D25E39900CB5CBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBDCE571D25E39900CB5CBC /* ViewController.m */; };
@@ -19,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		106B7B3FE9198E7902764E4A /* Pods-Flashy-TableViews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flashy-TableViews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flashy-TableViews/Pods-Flashy-TableViews.debug.xcconfig"; sourceTree = "<group>"; };
+		AF23C94F1D28879000BCE45B /* MyCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomTableViewCell.h; sourceTree = "<group>"; };
+		AF23C9501D28879000BCE45B /* MyCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomTableViewCell.m; sourceTree = "<group>"; };
 		AFBDCE4D1D25E39800CB5CBC /* Flashy-TableViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flashy-TableViews.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBDCE511D25E39800CB5CBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AFBDCE531D25E39800CB5CBC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,6 +92,8 @@
 				AFBDCE541D25E39800CB5CBC /* AppDelegate.m */,
 				AFBDCE561D25E39800CB5CBC /* ViewController.h */,
 				AFBDCE571D25E39900CB5CBC /* ViewController.m */,
+				AF23C94F1D28879000BCE45B /* MyCustomTableViewCell.h */,
+				AF23C9501D28879000BCE45B /* MyCustomTableViewCell.m */,
 				AFBDCE671D25E4A500CB5CBC /* FISTableViewController.h */,
 				AFBDCE681D25E4A500CB5CBC /* FISTableViewController.m */,
 				AFBDCE591D25E39900CB5CBC /* Main.storyboard */,
@@ -142,6 +147,7 @@
 				TargetAttributes = {
 					AFBDCE4C1D25E39800CB5CBC = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9LZ34BLS2W;
 					};
 				};
 			};
@@ -233,6 +239,7 @@
 				AFBDCE581D25E39900CB5CBC /* ViewController.m in Sources */,
 				AFBDCE551D25E39800CB5CBC /* AppDelegate.m in Sources */,
 				AFBDCE521D25E39800CB5CBC /* main.m in Sources */,
+				AF23C9511D28879000BCE45B /* MyCustomTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,10 +352,13 @@
 			baseConfigurationReference = 106B7B3FE9198E7902764E4A /* Pods-Flashy-TableViews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Flashy-TableViews/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Webb.C.Flashy-TableViews";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -357,10 +367,13 @@
 			baseConfigurationReference = DC32053EEE0BB23EC51E99A4 /* Pods-Flashy-TableViews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Flashy-TableViews/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Webb.C.Flashy-TableViews";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

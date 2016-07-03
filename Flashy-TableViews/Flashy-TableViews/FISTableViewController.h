@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SWTableViewCell.h>
+#import <UIScrollView+APParallaxHeader.h>
 
 @interface FISTableViewController : UITableViewController
+
+@property (strong, nonatomic) NSMutableArray *testArray;
+
+
+
+
 
 @end
